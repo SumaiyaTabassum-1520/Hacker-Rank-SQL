@@ -1,0 +1,3 @@
+SELECT Round(LONG_W,4) from STATION
+Where LAT_N = (Select MIN(LAT_N)
+From STATION WHERE LAT_N >38.7780); 
